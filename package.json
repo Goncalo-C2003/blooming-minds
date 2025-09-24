@@ -1,0 +1,23 @@
+{
+  "name": "psych-forum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goncalo-C2003/PsychProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Goncalo-C2003/PsychProject/issues"
+  },
+  "homepage": "https://github.com/Goncalo-C2003/PsychProject#readme",
+  "dependencies": {
+    "vite": "^7.1.7"
+  }
+}
