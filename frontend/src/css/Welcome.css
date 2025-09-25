@@ -1,11 +1,13 @@
-body {
+body
+{
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f6f7f9;
   color: #333;
 }
 
-.title-container {
+.title-container
+{
   max-width: 800px;
   margin: 60px auto;
   padding: 40px 20px;
@@ -16,20 +18,23 @@ body {
   color:
 }
 
-.title {
+.title
+{
   font-size: 2.5rem;
   color: #F5578A!important;
   margin-bottom: 15px;
 }
 
-.description {
+.description
+{
   font-size: 1.1rem;
   color: #666;
   line-height: 1.5;
   margin-bottom: 25px;
 }
 
-.action-button {
+.action-button
+{
   background-color: #F5578A;
   color: #fff;
   border: none;
@@ -40,6 +45,7 @@ body {
   transition: background-color 0.2s;
 }
 
-.action-button:hover {
+.action-button:hover
+{
   background-color: #db4e7b;
 }
