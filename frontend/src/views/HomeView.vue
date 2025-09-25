@@ -1,11 +1,14 @@
-<script setup></script>
-
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div class="title-container">
+    <h1 class='title'>Welcome to Psych Forum!</h1>
+    <p class='description'>Welcome to your Vue.js app!</p>
+    <button class='action-button'>Get Started</button>
+  </div>
 </template>
 
-<style scoped></style>
+<script>
+import "@/css/HomeView.css";
+export default {
+  name: 'HomeView',
+}
+</script>
