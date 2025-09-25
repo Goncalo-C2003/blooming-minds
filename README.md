@@ -1,1 +1,1 @@
-# PsychProject
+# Blooming Minds Forum
