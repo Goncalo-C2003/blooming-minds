@@ -1,25 +1,19 @@
 <template>
  <nav class="navbar-top">
-    <div class="navbar-topleft">
+    <nav class="navbar-topleft">
       <span class="logo">Blooming Minds Forum</span>
-    </div>
-    <div class="navbar-topright">
-    </div>
+    </nav>
+    <nav class="navbar-topright">
+    </nav>
   </nav>
   <nav class="navbar-bottom">
-    <div class="navbar-bottomleft">
-      <a style="text-decoration: none; color: var(--text);
-      font-size: 14px; font-weight: bold; transition:
-      color 0.2s ease;" href="#">Home</a>
-    </div>
-    <div class="navbar-bottomright">
-      <a style="text-decoration: none; color: var(--text);
-      font-size: 14px; font-weight: bold; transition:
-      color 0.2s ease;" href="#">Login</a>
-      <router-link to="/signup" style="text-decoration: none; color: var(--text);
-      font-size: 14px; font-weight: bold; transition:
-      color 0.2s ease;" href="#">Sign Up</router-link>
-    </div>
+    <nav class="navbar-bottomleft">
+      <router-link to="/home" class="navbar-item" href="#">Home</router-link>
+    </nav>
+    <nav class="navbar-bottomright">
+      <router-link to="/login" class="navbar-item" href="#">Login</router-link>
+      <router-link to="/signup" class="navbar-item" href="#">Sign Up</router-link>
+    </nav>
   </nav>
 </template>
 

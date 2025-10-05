@@ -51,14 +51,14 @@
   gap: 15px;
 }
 
-
-.navbar-bottomitem
+.navbar-item
 {
   text-decoration: none;
   color: var(--text);
   font-size: 14px;
   font-weight: bold;
-  transition: color 0.2s ease;
+  transition:
+  color 0.2s ease;
 }
 
 .logo
