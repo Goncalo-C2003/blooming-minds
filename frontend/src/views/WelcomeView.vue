@@ -10,7 +10,8 @@
 
 <script>
 import "@/css/Welcome.css";
-export default {
+export default
+{
   name: 'WelcomeView',
 }
 </script>

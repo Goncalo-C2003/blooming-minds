@@ -8,17 +8,24 @@
   </nav>
   <nav class="navbar-bottom">
     <div class="navbar-bottomleft">
-      <a href="#">Home</a>
+      <a style="text-decoration: none; color: var(--text);
+      font-size: 14px; font-weight: bold; transition:
+      color 0.2s ease;" href="#">Home</a>
     </div>
     <div class="navbar-bottomright">
-      <a href="#">Login</a>
-      <a href="#">Sign Up</a>
+      <a style="text-decoration: none; color: var(--text);
+      font-size: 14px; font-weight: bold; transition:
+      color 0.2s ease;" href="#">Login</a>
+      <router-link to="/signup" style="text-decoration: none; color: var(--text);
+      font-size: 14px; font-weight: bold; transition:
+      color 0.2s ease;" href="#">Sign Up</router-link>
     </div>
   </nav>
 </template>
 
 <script>
-export default {
+export default
+{
   name: 'Navbar',
 }
 </script>
