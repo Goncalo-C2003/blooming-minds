@@ -30,3 +30,17 @@ body.dark,
   --muted: #98a4b3;
   --card-shadow: none;
 }
+
+.main-content
+{
+  padding: 40px 30px;
+  margin: 40px auto;
+  max-width: 1200px;
+  max-height: 800px;
+  border-radius: 30px;
+  background: var(--card);
+  color: var(--text);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
