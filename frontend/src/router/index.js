@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import WelcomeView from '../views/WelcomeView.vue'
 import SignupView from '../views/SignupView.vue'
 import LoginView from '../views/LoginView.vue'
+import MessageView from '../views/MessageView.vue'
 
 const routes = [
   {
@@ -25,6 +26,11 @@ const routes = [
     name: 'Login',
     component: LoginView
   },
+  {
+    path: '/message',
+    name: 'Message',
+    component: MessageView
+  }
 ]
 
 const router = createRouter({
