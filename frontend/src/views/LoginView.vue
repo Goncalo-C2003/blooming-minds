@@ -29,5 +29,4 @@ export default
     Navbar
   }
 }
-
 </script>
