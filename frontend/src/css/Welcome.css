@@ -1,50 +1,41 @@
-body
-{
+body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: var(--bg);
   color: var(--text);
 }
 
-.title-container
-{
+.title-container {
   max-width: 800px;
   margin: 60px auto;
-  padding: 40px 20px;
-  background-color: var(--card);
+  padding: 42px 28px;
+  background: rgba(255, 255, 255, 0.38);
+  border: 1px solid rgba(255, 255, 255, 0.72);
   border-radius: var(--card-radius);
   text-align: center;
   box-shadow: var(--card-shadow);
+  backdrop-filter: blur(20px);
 }
 
-.title
-{
+.title {
   font-size: 2.5rem;
   color: var(--accent) !important;
   margin-bottom: 15px;
 }
 
-.description
-{
+.description {
   font-size: 1.1rem;
   color: var(--muted);
-  line-height: 1.5;
+  line-height: 1.6;
   margin-bottom: 25px;
 }
 
-.action-button
-{
-  background-color: var(--accent);
+.action-button {
+  background: linear-gradient(135deg, #ff9acc 0%, #f5578a 100%);
   color: #fff;
   border: none;
-  padding: 12px 20px;
+  padding: 14px 24px;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.action-button:hover
-{
-  filter: brightness(0.95);
 }

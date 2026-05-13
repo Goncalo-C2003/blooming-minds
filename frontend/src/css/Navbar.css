@@ -1,69 +1,64 @@
-
-
-.navbar-top
-{
+.navbar-top,
+.navbar-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #F5578A!important;
-  padding: 25px 20px;
-  box-shadow: var(--card-shadow);
-  border-bottom: 2px solid var(--accent);
+  background: linear-gradient(135deg, #ff9acc 0%, #f5578a 100%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 24px 80px rgba(245, 87, 138, 0.24);
   font-family: Arial, sans-serif;
+  max-width: 1010px;
+  margin: auto;
+}
+
+.navbar-top {
+  padding: 18px 22px;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  max-width: 1000px;
-  margin: auto;
   margin-top: 0.7vh;
 }
 
-.navbar-topleft,
-.navbar-topright
-{
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.navbar-bottom
-{
-  margin-top: 3px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #F5578A!important;
-  padding: 5px 15px;
-  box-shadow: var(--card-shadow);
-  border-bottom: 2px solid var(--accent);
-  font-family: Arial, sans-serif;
+.navbar-bottom {
+  padding: 10px 22px;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  max-width: 1010px;
-  margin: auto;
   margin-top: 0.5vh;
   margin-bottom: 2vh;
 }
 
+.navbar-topleft,
+.navbar-topright,
 .navbar-bottomleft,
-.navbar-bottomright
-{
+.navbar-bottomright {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.navbar-item
-{
+.navbar-item {
   text-decoration: none;
-  color: var(--text);
+  color: white;
   font-size: 14px;
   font-weight: bold;
 }
 
-.logo
-{
+.logo {
   font-size: 20px;
   font-weight: bold;
-  color: var(--text);
+  color: white;
   margin-right: 10px;
+}
+
+.theme-button {
+  background: rgba(255, 255, 255, 0.18);
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.56);
+  padding: 10px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.theme-button:hover {
+  background: rgba(255, 255, 255, 0.26);
 }
