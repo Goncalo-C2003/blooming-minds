@@ -1,0 +1,86 @@
+.form {
+  max-width: 700px;
+  margin: auto;
+  border: 2px solid #f1f1f1;
+  padding: 24px;
+  background-color: var(--card);
+  border-radius: 16px;
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.08);
+}
+
+label {
+  display: block;
+  margin: 14px 0 8px;
+  font-weight: 600;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 0 0 18px;
+  display: block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #e8e8e8 !important;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(4, 170, 109, 0.12);
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 30px;
+}
+
+button {
+  color: white;
+  padding: 14px 24px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.95;
+  border-radius: 12px;
+  transition: all 0.18s ease;
+}
+
+button:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.actnbtn {
+  width: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px auto 0;
+  min-width: 180px;
+  background-color: #F5578A;
+}
+
+.extra {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.extra p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 16px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

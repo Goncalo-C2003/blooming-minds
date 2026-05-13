@@ -3,12 +3,18 @@
     <main class="view-wrap">
       <router-view />
     </main>
+    <Footer />
   </div>
 </template>
 
 <script>
-export default
-{
-  name: 'App'
-}
+import Footer from "@/components/Footer.vue";
+import "@/css/Footer.css";
+
+export default {
+  name: 'App',
+  components: {
+    Footer
+  }
+};
 </script>

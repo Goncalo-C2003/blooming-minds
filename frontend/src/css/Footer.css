@@ -1,0 +1,47 @@
+.app-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 18px 24px;
+  margin: 64px auto 0.7vh;
+  max-width: 1010px;
+  background-color: #F5578A !important;
+  color: white;
+  border-top: 2px solid var(--accent);
+  border-radius: 1rem;
+  box-shadow: var(--card-shadow);
+}
+
+.footer-left {
+  color: var(--text);
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-button {
+  background: transparent;
+  color: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  .app-footer {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .footer-right {
+    justify-content: center;
+  }
+}
