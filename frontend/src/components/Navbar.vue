@@ -34,7 +34,7 @@ export default {
   },
   computed: {
     themeLabel() {
-      return this.dark ? '☀' : '⏾';
+      return this.dark ? '☀' : '🌙︎';
     }
   },
   mounted() {

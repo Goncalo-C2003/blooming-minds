@@ -29,7 +29,7 @@ export default {
   --muted: #5c3f57;
   --accent: #f5578a;
   --accent-soft: rgba(245, 87, 138, 0.22);
-  --card-shadow: 0 28px 100px rgba(195, 49, 108, 0.18);
+  --card-shadow: 0 24px 60px rgba(0, 0, 0, 0.08);
   --card-radius: 1rem;
 }
 

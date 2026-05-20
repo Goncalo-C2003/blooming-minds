@@ -86,6 +86,17 @@ body.dark .description {
     linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 50%),
     linear-gradient(135deg, #ff9acc 0%, #f5578a 100%);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.40);
+  transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.22s ease;
+}
+
+.action-button:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 16px 40px rgba(245, 87, 138, 0.38), inset 0 1px 0 rgba(255, 255, 255, 0.55);
+}
+
+.action-button:active {
+  transform: translateY(0) scale(0.97);
+  transition-duration: 0.1s;
 }
 
 body.dark .action-button {

@@ -5,14 +5,20 @@
 }
 
 .form {
-  max-width: 700px;
+  max-width: 1010px;
   margin: 40px auto;
-  border: 1px solid var(--card-border);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   padding: 36px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(28px) saturate(180%);
+  border-radius: var(--card-radius);
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.10), 0 1px 4px rgba(0, 0, 0, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.90);
+}
+
+body.dark .form {
+  border-color: var(--card-border);
   background: var(--card-glass);
-  backdrop-filter: blur(20px) saturate(160%);
-  border-radius: 1.5rem;
-  box-shadow: var(--card-shadow), inset 0 1px 0 rgba(255, 255, 255, 0.55);
+  box-shadow: var(--card-shadow), inset 0 1px 0 rgba(255, 255, 255, 0.10);
 }
 
 .form h1 {
@@ -40,20 +46,39 @@ input[type=text], input[type=password] {
   padding: 16px;
   margin: 0 0 18px;
   display: block;
-  border: 1px solid rgba(255, 255, 255, 0.72);
-  background: rgba(255, 255, 255, 0.62);
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.80);
   backdrop-filter: blur(8px);
   border-radius: 14px;
   box-sizing: border-box;
   color: var(--text);
-  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 input[type=text]:focus, input[type=password]:focus {
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.98);
   outline: none;
   border-color: rgba(245, 87, 138, 0.50);
-  box-shadow: 0 0 0 4px rgba(245, 87, 138, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 0 4px rgba(245, 87, 138, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+body.dark input[type=text], body.dark input[type=password] {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0) 50%),
+    rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+body.dark input[type=text]:focus, body.dark input[type=password]:focus {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0) 50%),
+    rgba(255, 255, 255, 0.13);
+  border-color: rgba(245, 87, 138, 0.60);
+  box-shadow: 0 0 0 4px rgba(245, 87, 138, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 
 .actnbtn {
@@ -65,6 +90,7 @@ input[type=text]:focus, input[type=password]:focus {
   border-radius: 999px;
   border: none;
   cursor: pointer;
+  font-family: inherit;
   font-weight: 700;
   font-size: 1rem;
   color: #fff;
@@ -72,6 +98,16 @@ input[type=text]:focus, input[type=password]:focus {
     linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 50%),
     linear-gradient(135deg, #ff9acc 0%, #f5578a 100%);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.40);
+  transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.actnbtn:hover {
+  transform: translateY(-3px) scale(1.04);
+}
+
+.actnbtn:active {
+  transform: translateY(0) scale(0.97);
+  transition-duration: 0.1s;
 }
 
 body.dark .actnbtn {
