@@ -1,6 +1,6 @@
 .message-page {
-  padding: 40px 18px 20px;
-  max-width: 1080px;
+  padding: 40px 0 20px;
+  max-width: 1010px;
   margin: 0 auto;
 }
 
@@ -8,9 +8,9 @@
   padding: 34px 34px 28px;
   border-radius: 1.5rem;
   background: var(--card-glass);
+  backdrop-filter: blur(20px) saturate(160%);
   border: 1px solid var(--card-border);
-  box-shadow: var(--card-shadow);
-  backdrop-filter: blur(20px);
+  box-shadow: var(--card-shadow), inset 0 1px 0 rgba(255, 255, 255, 0.55);
   color: var(--text);
 }
 
@@ -33,15 +33,12 @@
 
 .message-item {
   padding: 22px 20px;
-  background: rgba(255, 255, 255, 0.78);
+  background: var(--card-glass);
+  backdrop-filter: blur(12px) saturate(140%);
   border-radius: 1.1rem;
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--card-border);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.50);
   color: var(--text);
-}
-
-body.dark .message-item {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.12);
 }
 
 .message-item h2 {
@@ -77,19 +74,33 @@ body.dark .message-item {
 
 .message-actions .primary-button {
   color: #fff;
-  background: linear-gradient(135deg, #ff9acc 0%, #f5578a 100%);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 50%),
+    linear-gradient(135deg, #ff9acc 0%, #f5578a 100%);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.40);
 }
 
 .message-actions .secondary-button {
   color: var(--text);
-  background: rgba(255, 255, 255, 0.16);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 50%),
+    rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.52);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.55);
+}
+
+body.dark .message-actions .primary-button {
+  box-shadow: 0 8px 28px rgba(245, 87, 138, 0.50), inset 0 1px 0 rgba(255, 255, 255, 0.40);
 }
 
 body.dark .message-actions .secondary-button {
   color: #f3e8f2;
-  background: rgba(255, 255, 255, 0.08);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0) 50%),
+    rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: none;
 }
 
 @media (max-width: 760px) {

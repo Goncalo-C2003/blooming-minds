@@ -1,20 +1,7 @@
 @import "./Form.css";
 
-button {
-  background-color: #04AA6D;
-}
-
-button:hover {
-  opacity: 1;
-}
-
-.extra {
-  margin-top: 18px;
-  text-align: center;
-}
-
 .link {
-  color: #F5578A !important;
+  color: var(--accent) !important;
   text-decoration: none;
   display: inline-block;
   margin-top: 12px;

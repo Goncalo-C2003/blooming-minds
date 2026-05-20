@@ -4,7 +4,7 @@
       <span>© 2026 Gonçalo C.</span>
     </div>
     <div class="footer-right">
-      <button type="button" class="footer-button navbar-item">About Us</button>
+      <button type="button" class="footer-button navbar-item">About Me</button>
     </div>
   </footer>
 </template>

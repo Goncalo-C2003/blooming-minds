@@ -3,7 +3,7 @@
     <main class="view-wrap">
       <router-view />
     </main>
-    <Footer />
+    <Footer v-if="$route.name !== 'Welcome'" />
   </div>
 </template>
 

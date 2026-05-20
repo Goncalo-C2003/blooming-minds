@@ -5,6 +5,7 @@
       Here we discuss everything psychology, and we also listen and give support on whatever you're going through.
     </p>
     <router-link to=/home><button class="action-button">Share your thoughts</button></router-link>
+    <p class="copyright">© 2026 Gonçalo C.</p>
   </div>
 </template>
 

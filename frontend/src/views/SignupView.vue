@@ -1,5 +1,6 @@
 <template>
   <Navbar />
+  <section class="form-page">
   <Form>
     <template #heading>
       <h1>Sign Up</h1>
@@ -31,6 +32,7 @@
       </p>
     </template>
   </Form>
+  </section>
 </template>
 
 <script>

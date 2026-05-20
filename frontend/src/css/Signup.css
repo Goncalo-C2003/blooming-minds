@@ -1,27 +1,7 @@
 @import "./Form.css";
 
-.form {
-  border: hsl(259, 13%, 28%) 1px solid;
-  background-color: hsl(243, 26%, 15%);
-  border-radius: 1rem;
-  background-image: radial-gradient(circle, #1e1e2f, #12121b);
-}
-
-button {
-  background-color: #04AA6D;
-}
-
-button:hover {
-  opacity: 1;
-}
-
-.extra {
-  margin-top: 18px;
-  text-align: center;
-}
-
 .link {
-  color: #F5578A !important;
+  color: var(--accent) !important;
   text-decoration: none;
   display: inline-block;
   margin-top: 12px;

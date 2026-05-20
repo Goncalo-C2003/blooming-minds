@@ -1,7 +1,10 @@
 <template>
   <nav class="navbar-top">
     <div class="navbar-topleft">
-      <span class="logo">Blooming Minds Forum</span>
+      <div class="logo-wrap">
+        <img src="/mascot-logo.png" alt="" class="logo-mascot" />
+        <img src="/logo-text.png" alt="Blooming Minds" class="logo-text" />
+      </div>
     </div>
     <div class="navbar-topright">
       <button type="button" class="theme-button" @click="toggleTheme">
@@ -31,7 +34,7 @@ export default {
   },
   computed: {
     themeLabel() {
-      return this.dark ? 'Light Mode' : 'Dark Mode';
+      return this.dark ? '☀' : '⏾';
     }
   },
   mounted() {
