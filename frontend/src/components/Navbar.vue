@@ -18,7 +18,7 @@
       <router-link to="/message" class="navbar-item">Messages</router-link>
     </div>
     <div class="navbar-bottomright">
-      <router-link to="/login" class="navbar-item">Login</router-link>
+      <router-link to="/login" class="navbar-item">Log In</router-link>
       <router-link to="/signup" class="navbar-item">Sign Up</router-link>
     </div>
   </nav>

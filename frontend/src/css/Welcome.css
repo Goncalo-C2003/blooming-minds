@@ -1,9 +1,44 @@
+.welcome-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100svh - 4.5rem);
+}
+
+.welcome-mascot {
+  display: block;
+  margin: 0 auto 14px;
+  width: 100px;
+  user-select: none;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+body.dark .welcome-mascot {
+  filter: invert(1);
+}
+
+.welcome-logo-text {
+  margin-top: 4px;
+  height: 2.8rem;
+  vertical-align: middle;
+  margin-bottom: 2px;
+  user-select: none;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  filter: invert(1);
+}
+
+body.dark .welcome-logo-text {
+  filter: invert(0);
+}
+
 .title-container {
-  max-width: 1010px;
-  margin: 60px auto;
-  padding: 42px 28px;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px 36px;
   background: var(--card-glass);
-  backdrop-filter: blur(20px) saturate(160%);
+  backdrop-filter: blur(28px) saturate(180%);
   border: 1px solid var(--card-border);
   border-radius: var(--card-radius);
   text-align: center;
@@ -11,20 +46,24 @@
 }
 
 .title {
-  font-size: 2.5rem;
-  color: var(--accent) !important;
+  font-size: 2.6rem;
+  color: #000000;
   margin-bottom: 15px;
+}
+
+body.dark .title {
+  color: #ffffff !important;
 }
 
 .description {
   font-size: 1.1rem;
-  color: var(--muted);
+  color: #333333;
   line-height: 1.6;
   margin-bottom: 25px;
 }
 
-body.dark .action-button {
-  box-shadow: 0 8px 28px rgba(245, 87, 138, 0.50), inset 0 1px 0 rgba(255, 255, 255, 0.40);
+body.dark .description {
+  color: #ffffff !important;
 }
 
 .copyright {
@@ -34,17 +73,21 @@ body.dark .action-button {
 }
 
 .action-button {
-  display: inline-block;
-  width: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  padding: 14px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 50%),
     linear-gradient(135deg, #ff9acc 0%, #f5578a 100%);
-  color: #fff;
-  border: none;
-  padding: 14px 32px;
-  font-size: 1rem;
-  font-weight: 700;
-  border-radius: 999px;
-  cursor: pointer;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.40);
+}
+
+body.dark .action-button {
+  box-shadow: 0 8px 28px rgba(245, 87, 138, 0.50), inset 0 1px 0 rgba(255, 255, 255, 0.40);
 }

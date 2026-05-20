@@ -3,7 +3,7 @@
   <section class="form-page">
   <Form>
     <template #heading>
-      <h1>Login</h1>
+      <h1>Log In</h1>
     </template>
 
     <template #description>
